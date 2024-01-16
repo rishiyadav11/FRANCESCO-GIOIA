@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: #fff ;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #111111;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+#page1{
+    scroll-snap-align: start;
+    height: 100vh;
+    width: 100%;
+    background-color: #111111;
+}
+
+#page1 nav{
+    /* background-color: red; */
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+
+
+#page1 #nav-right{
+    display: flex;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#page1 #nav-left>h3,#nav-right>h3{
+    font-size: 1.3vw;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#page1 h1{
+    font-size: 10vw;
+    font-weight: 500;
+    line-height: 8vw;
+    /* background-color: red; */
+    width: 85%;
+    margin-left: 10%;
+    position: relative;
+    z-index: 999;
+    user-select: none;
+}
+#page1 h1:nth-child(2){
+    margin-top: 13vw;
+
+}
+#page1 h1:nth-child(3){
+    text-align: center;
+
+}
+#page1 h1:nth-child(4){
+    text-align: center;
+
+}
+
+
+#page1 img{
+    height: 25vw;
+    position: absolute;
+    top: 8%;
+    left: 40%;
+    width: 20vw;
+    object-fit: cover;
+}
+
+#page1 #img2{
+    rotate: 15deg;
+}
+
+#page1 #img3{
+    rotate: 8deg;
+}
+
+
+#page1 #nav-btm{
+    margin-top: 5vw;
+    padding: 0 1vw;
+    height: 5vw;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#page1 #nav-btm>h4{
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #111111;
+    scroll-snap-align: center;
+}
+
+
+#page2 #gallery-sec{
+    padding: 2vw;
+    height: 70%;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+#gallery-sec .cover{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    /* background-color: honeydew; */
+}
+
+
+.scroll-img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.scroll-img::-webkit-scrollbar{
+    -webkit-appearance: none;
+    display: none;
+}
+
+
+.child{
+    min-width: 20%;
+    height: 100%;
+    margin: 1px 30px;
+    cursor: pointer;
+    /* border: 1px solid white; */
+    overflow: hidden;
+    /* background-color: red; */
+}
+
+
+.img-child{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+#btn-sec{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /* background-color: lavenderblush; */
+    gap: 2vw;
+    padding-right: 2vw;
+}
+
+#btn-sec .icon{
+    height: 4vw;
+    width: 4vw;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon h1{
+    font-size: 1.3vw;
+    font-weight: 400; 
+
+}
+
+
+
+
+
+
+#page2 #text{
+    border-top: 1px solid white;
+    height: 30%;
+    width: 100%;
+    /* background-color: rgb(200, 125, 12); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+}
+
+
+#text>h1{
+    font-size: 8vw;
+    font-weight: 500;
+}
+
+
+#page3{
+    scroll-snap-align: end;
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1552168324-d612d77725e3?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form{
+    height: 80vh;
+    width: 80vw;
+    backdrop-filter: blur(50px) saturate(132%);
+    border: 1px solid rgba(152, 152, 152, 0.178);
+    background-color: rgba(255, 255,255,0.148);
+    border-radius: 50px;
+    transition: all 0.4s linear;
+
+}
+
+
+#form:hover{
+    box-shadow: -5px 5px 20px #4e3939;
+}
+#form h1{
+    margin-top: 2vw;
+    text-align: center;
+    font-size: 3vw;
+    -webkit-text-stroke: 2px black;
+    transition: all 2 linear;
+    user-select: none;
+}
+
+#form h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: black;
+}
+
+#googlemap{
+    width: 100%;
+    height: calc(100% - 5vvw);
+}
